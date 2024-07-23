@@ -24,7 +24,6 @@
       "exports": "never",
       "functions": "never"
   }],
-  "implicit-arrow-linebreak": ["error", "below"],
   "import/prefer-default-export": "off",
   "react/no-unused-prop-types": "off"
   },
