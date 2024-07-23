@@ -1,8 +1,9 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "next",
     "eslint-config-next",
-    "airbnb"
+    "eslint:recommended"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
