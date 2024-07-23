@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "success-message": "echo \n\n\n🚀  Everything is awesome. 🚀\n\n🖥️  Auto checking completed, ready to deploy.🖥️\n\n☁️  Run: git push ☁️",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
@@ -37,7 +36,7 @@
   "lint-staged": {
     "*.(js|ts|tsx)": [
       "prettier --write",
-      "eslint --fix "
+      "npm run lint "
     ]
   }
 }
