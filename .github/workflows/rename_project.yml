@@ -29,6 +29,9 @@ jobs:
         id: is_template
         run: echo "::set-output name=is_template::$(ls .github/template.yml &> /dev/null && echo true || echo false)"
 
+      - name: Make rename_project.sh executable
+        run: chmod +x .github/rename_project.sh
+
       - name: Rename the project
         if: steps.is_template.outputs.is_template == 'true'
         run: |
