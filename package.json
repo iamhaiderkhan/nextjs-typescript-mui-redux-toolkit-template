@@ -1,10 +1,10 @@
 {
-  "name": "nextjs-typescript-mui-redux-toolkit-template",
+  "name": "project_name",
+  "description": "project_description",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Haider Khan",
-    "email": "haiderkhan.live@gmail.com"
+    "name": "author_name"
   },
   "scripts": {
     "dev": "next dev",
