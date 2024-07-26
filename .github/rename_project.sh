@@ -3,7 +3,7 @@ while getopts a:n:u:d: flag
 do
     case "${flag}" in
         a) author=${OPTARG};;
-        e) email=${OPTARG};;
+        f) email=${OPTARG};;
         n) name=${OPTARG};;
         u) urlname=${OPTARG};;
         d) description=${OPTARG};;
