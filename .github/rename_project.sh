@@ -11,7 +11,7 @@ do
 done
 
 echo "Author: $author";
-echo "Author Email: $email"
+echo "Author Email: $email";
 echo "Project Name: $name";
 echo "Project URL name: $urlname";
 echo "Description: $description";
