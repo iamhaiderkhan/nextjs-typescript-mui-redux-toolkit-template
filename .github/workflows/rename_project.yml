@@ -31,9 +31,9 @@ jobs:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           REPO_OWNER=${{ env.REPOSITORY_OWNER }}
-          REPO_NAME=${{ env.REPOSITORY_NAME }}
+          REPO_NAME=${{ env.REPOSITORY_URLNAME }}
           REPO_INFO=$(curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/repos/$REPO_OWNER/$REPO_NAME)
-          EMAIL=$(echo "$REPO_INFO" | jq -r .owner.email)
+          EMAIL=$(curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/users/$REPO_OWNER | jq -r .email)
           DESCRIPTION=$(echo "$REPO_INFO" | jq -r .description)
           echo "REPOSITORY_OWNER_EMAIL=${EMAIL}" >> $GITHUB_ENV
           echo "REPOSITORY_DESCRIPTION=${DESCRIPTION}" >> $GITHUB_ENV
