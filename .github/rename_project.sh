@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-while getopts a:n:u:d: flag
+while getopts a:e:n:u:d: flag
 do
     case "${flag}" in
         a) author=${OPTARG};;
-        f) email=${OPTARG};;
+        e) email=${OPTARG};;
         n) name=${OPTARG};;
         u) urlname=${OPTARG};;
         d) description=${OPTARG};;
