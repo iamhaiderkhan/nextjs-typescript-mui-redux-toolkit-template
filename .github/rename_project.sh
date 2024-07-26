@@ -10,6 +10,7 @@ do
 done
 
 echo "Author: $author";
+echo "Author Email: ${email}"
 echo "Project Name: $name";
 echo "Project URL name: $urlname";
 echo "Description: $description";
@@ -17,6 +18,7 @@ echo "Description: $description";
 echo "Renaming project..."
 
 original_author="author_name"
+original_email="author_email"
 original_name="project_name"
 original_urlname="project_urlname"
 original_description="project_description"
@@ -24,6 +26,7 @@ original_description="project_description"
 for filename in $(git ls-files)
 do
     sed -i "s/$original_author/$author/g" $filename
+    sed -i "s/$original_email/$email/g" $filename
     sed -i "s/$original_name/$name/g" $filename
     sed -i "s/$original_urlname/$urlname/g" $filename
     sed -i "s/$original_description/$description/g" $filename

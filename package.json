@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "author_name"
+    "name": "author_name",
+    "email": "author_email"
   },
   "scripts": {
     "dev": "next dev",
